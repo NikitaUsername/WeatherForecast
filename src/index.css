@@ -1,0 +1,59 @@
+
+#update-button{
+    background-color: lightgrey;
+    border-radius: 8px;
+    margin-top: 38px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#title{
+    color: #757575;
+    margin-top: 30px;
+}
+
+#waiting{
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+h2{
+    color: #757575;
+}
+
+P{
+    text-align: left;
+    width: 50%;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #757575;
+}
+
+.css-236bqq{
+    margin-left: 35%;
+}
+
+
+#val{
+    font-size: 20px;
+    margin-left: 20%;
+    font-weight: bold;
+    color: #757575;
+}
+#string{
+    
+    padding-top: 12px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#pic{
+    margin-top: 30px;
+    height: 120px;
+}
+#pic-temp{
+    display: inline-block;
+}
