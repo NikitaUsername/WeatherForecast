@@ -35,9 +35,11 @@ P{
 }
 
 
+
 #val{
     font-size: 20px;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: 20px;
     font-weight: bold;
     color: #757575;
 }
@@ -51,9 +53,21 @@ P{
 }
 
 #pic{
-    margin-top: 30px;
+    margin-top: 20px;
     height: 120px;
 }
-#pic-temp{
+
+
+.mainInfo{
     display: inline-block;
 }
+#temp{
+    margin-top: 35px;
+    font-size: 50px;
+}
+#inputfld{
+    background-color: #dddddd;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
