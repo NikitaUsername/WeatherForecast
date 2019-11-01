@@ -12,7 +12,7 @@ class savedHeader extends React.Component{
                             Избранное
                         </h2>
                     </div>
-                    <div class="col-lg-6">
+                    <div className="col-lg-6">
                         <form>
                         <input id="inputfld" placeholder="Город"></input>
                         <button id="update-button">

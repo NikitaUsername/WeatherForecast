@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./components/header"
 import Weather from "./components/weather"
-import Saved from "./components/saved"
+//import Saved from "./components/saved"
 import SavedHeader from "./components/savedHeader"
-import Cities from "./reducers/store"
-import {createStore} from "redux";
-import savedHeader from "./components/savedHeader";
+//import Cities from "./reducers/store"
+//import {createStore} from "redux";
+//import savedHeader from "./components/savedHeader";
 
-var store = createStore(Cities);
+//var store = createStore(Cities);
 class App extends React.Component{
   state = {
     info: undefined,
@@ -28,7 +28,7 @@ class App extends React.Component{
     //  name: 'London'
     //});
    
-    console.log(store.getState());
+    //console.log(store.getState());
 
     this.findWeather(positionanalog);
   }
@@ -70,13 +70,6 @@ class App extends React.Component{
         <Header weatherMethod={this.gettingWeather} />
         <Weather weatherInfo={this.state.info}/>
         <SavedHeader />
-        <div>{
-          store.getState().cities.map(function (item,i){
-            this.findWeatherByName(item);
-            return(<Saved key={i}>{this.state.byNameInfo}</Saved>)
-          })
-        }
-        </div>
       </div> 
     );
   }

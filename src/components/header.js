@@ -1,7 +1,9 @@
 import React from "react";
 
 class Header extends React.Component{
-    
+    componentDidMount() {
+        this.props.weatherMethod();
+   }
     render(){
         return(
             <div className="container">
