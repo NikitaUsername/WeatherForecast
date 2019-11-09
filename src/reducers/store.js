@@ -5,7 +5,11 @@ function store(state = initialState, action){
     switch(action.type){
         case 'ADD_CITY':{
             const cities = [...state.cities];
-            cities.push(action.name);
+            const newCity = {
+                name: action.name,
+                weather: []
+            }
+            cities.push(newCity);
             return{
                 ...state,
                 cities
@@ -14,13 +18,28 @@ function store(state = initialState, action){
 
         case 'DELETE_CITY':{
             const cities = [...state.cities];
-            cities.splice(action.index, 1);
+            const index = cities.findIndex(city => city.name === action.name);
+            cities.splice(index, 1);
             return{
                 ...state,
                 cities
             };
         }
-        default: return state;
+        
+        case 'ADD_WEATHER':{
+            const cities = [...state.cities];
+            const index = cities.findIndex(city => city.name === action.name);
+            cities[index] = {
+                ...cities[index],
+                weather: action.weather
+            };
+            return{
+                ...state,
+                cities
+            };
+        }
+
+        default: return state = initialState;
     }
 };
 export default store;

@@ -7,7 +7,6 @@ class Weather extends React.Component{
     render(){
         if (this.props.weatherInfo){
             var pic = "http://openweathermap.org/img/wn/" + this.props.weatherInfo.weather[0].icon + "@2x.png"
-            console.log(pic);
         return(
                 <div className = "container">
                     <div className = "row">
