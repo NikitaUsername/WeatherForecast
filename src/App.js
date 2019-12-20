@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/header"
-import Weather from "./components/weather"
-import Saved from "./components/saved"
-import SavedHeader from "./components/savedHeader"
+import Header from "./components/Header"
+import Weather from "./components/Weather"
+
+import SavedHeader from "./components/SavedHeader"
 
 
 class App extends React.Component {
