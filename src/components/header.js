@@ -1,8 +1,11 @@
 import React from "react";
 
+import { gettingWeather } from "../actions/localWeatherActions"
+import { connect } from 'react-redux';
+
 class Header extends React.Component {
     componentDidMount() {
-        this.props.weatherMethod();
+        this.props.gettingWeather();
     }
     render() {
         return (
@@ -14,7 +17,7 @@ class Header extends React.Component {
                         </h2>
                     </div>
                     <div className="col-lg-4">
-                        <button id="update-button" onClick={this.props.weatherMethod}>
+                        <button id="update-button" onClick={this.props.gettingWeather}>
                             Обновить
                         </button>
                     </div>
@@ -24,9 +27,12 @@ class Header extends React.Component {
     }
 }
 
-Header.defaultProps = {
+ Header.defaultProps = {
   
-    weatherMethod: f => f
-};
+     weatherMethod: f => f
+ };
+const mapDispatchToProps = {
+  gettingWeather: gettingWeather,
+}
 
-export default Header;
+export default connect( '', mapDispatchToProps)(Header)

@@ -22,7 +22,7 @@ exports[`Saved component matches the snapshot rendered component 1`] = `
     >
       <div
         className="row"
-        id=""
+        
       >
         <p>
           Погода
@@ -35,7 +35,7 @@ exports[`Saved component matches the snapshot rendered component 1`] = `
       </div>
       <div
         className="row"
-        id=""
+        
       >
         <p>
           Давление
@@ -49,7 +49,7 @@ exports[`Saved component matches the snapshot rendered component 1`] = `
       </div>
       <div
         className="row"
-        id=""
+        
       >
         <p>
           Скорость ветра
@@ -64,7 +64,7 @@ exports[`Saved component matches the snapshot rendered component 1`] = `
       </div>
       <div
         className="row"
-        id=""
+        
       >
         <p>
           Облачность

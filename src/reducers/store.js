@@ -1,4 +1,5 @@
 import initialState from "./initialState";
+import { bindActionCreators } from "redux";
 
 
 function store(state = initialState, action){
@@ -36,6 +37,22 @@ function store(state = initialState, action){
             return{
                 ...state,
                 cities
+            };
+        }
+
+
+        case 'ADD_LOCAL_WEATHER':{
+            return{
+                ...state,
+                localWeather: action.weather
+            };
+        }
+
+        case 'SHOW_HIDE_MODAL': {
+            return{
+                ...state,
+                showModal: action.turn,
+                modalText: action.payload
             };
         }
 

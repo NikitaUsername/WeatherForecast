@@ -1,3 +1,4 @@
+import {toUpperFirst} from '../helpers/helpersfunctions'
 
  function getCities() {
     const list = JSON.parse(localStorage.getItem('list'));
@@ -6,7 +7,7 @@
 
     const cityList = list.cities.map(name => {
         return {
-            name: name,
+            name: toUpperFirst(name),
             weather: {}
         };
     });
@@ -16,7 +17,10 @@
 
 
 const initialState = {
-    cities: getCities()
+    cities: getCities(),
+    localWeather: [],
+    showModal: false,
+    modalText: ''
 };
 
 export default initialState;
