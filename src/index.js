@@ -9,9 +9,9 @@ import thunk from "redux-thunk"
 import Cities from "./reducers/store"
 import { Provider } from 'react-redux';
 
-var store = createStore(Cities, {}, applyMiddleware( thunk));
+var store = createStore(Cities, {}, applyMiddleware(thunk));
 
-ReactDOM.render(<Provider store = {store}> <App /></Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}> <App /></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

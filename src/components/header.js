@@ -24,4 +24,9 @@ class Header extends React.Component {
     }
 }
 
+Header.defaultProps = {
+  
+    weatherMethod: f => f
+};
+
 export default Header;

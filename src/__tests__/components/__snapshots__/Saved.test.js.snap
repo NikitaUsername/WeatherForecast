@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+
+exports[`Saved component matches the snapshot rendered component 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-lg-4"
+    >
+      <h2
+        id="cityname"
+      >
+        Irkutsk
+      </h2>
+    </div>
+    <div
+      className="col-lg-6"
+    >
+      <div
+        className="row"
+        id=""
+      >
+        <p>
+          Погода
+        </p>
+        <div
+          id="minival"
+        >
+          light rain
+        </div>
+      </div>
+      <div
+        className="row"
+        id=""
+      >
+        <p>
+          Давление
+        </p>
+        <div
+          id="minival"
+        >
+          1021
+           hPa
+        </div>
+      </div>
+      <div
+        className="row"
+        id=""
+      >
+        <p>
+          Скорость ветра
+        </p>
+        <div
+          id="minival"
+        >
+           
+          5.1
+           m/s
+        </div>
+      </div>
+      <div
+        className="row"
+        id=""
+      >
+        <p>
+          Облачность
+        </p>
+        <div
+          id="minival"
+        >
+           
+          90
+           %
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-lg-2"
+    >
+      <button
+        className="close"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden="true"
+        >
+          ×
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Saved component matches the snapshot with loader 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-lg-12"
+    >
+      <h2
+        id="waiting"
+      >
+        Подождите, данные загружаются
+      </h2>
+    </div>
+    <div
+      className="col-lg-12 "
+    >
+      <div
+        className="center-block"
+      >
+        <div
+          className="css-236bqq"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

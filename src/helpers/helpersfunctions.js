@@ -26,6 +26,7 @@ export function addToStorage (name) {
 
 
 
+
 export function deleteFromStorage (name) {
   const list = localStorage.getItem('list');
     const jsonlist = JSON.parse(list);

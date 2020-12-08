@@ -1,13 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { ClipLoader } from 'react-spinners';
+
 import { addCity } from "../actions/savedCitiesActions"
 import { connect } from 'react-redux';
-import Saved from "./saved"
-class savedHeader extends React.Component {
+import Saved from "./Saved"
+class SavedHeader extends React.Component {
     cityAdd = event => {
         event.preventDefault();
-        console.log(this.props.favoriteCities);
+       
         this.props.addCity(event.target[0].value, this.props.favoriteCities);
     }
     render() {
@@ -31,6 +30,7 @@ class savedHeader extends React.Component {
                     <Saved
                         key={city.name}
                         cityName={city.name}
+                        
                     />
                 ))}
                 </div>
@@ -48,4 +48,4 @@ const mapDispatchToProps = {
     addCity: addCity,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(savedHeader)
+export default connect(mapStateToProps, mapDispatchToProps)(SavedHeader)

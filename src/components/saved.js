@@ -3,15 +3,16 @@ import ReactDOM from "react-dom";
 import { connect } from 'react-redux';
 import { addWeather, deleteCity } from '../actions/savedCitiesActions'
 import { ClipLoader } from 'react-spinners';
+import * as PropTypes from 'prop-types';
 
 class Saved extends React.Component {
     componentDidMount() {
       this.props.addWeather(this.props.cityName);
       const city = this.props.favoriteCities.find(city => city.name === this.props.cityName);
-      console.log(city);
      }
     render() {
         const city = this.props.favoriteCities.find(city => city.name === this.props.cityName);
+        
         if (city.weather.weather){
         return (
             <div className="container">
@@ -76,5 +77,6 @@ const mapStateToProps = (state) =>{
         favoriteCities: state.cities
     }
 }
+
 
 export default connect(mapStateToProps,mapDispatchToProps)(Saved);
