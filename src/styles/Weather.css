@@ -1,0 +1,34 @@
+.mainInfo {
+    display: inline-block;
+    width: 100%;
+}
+
+.mainWeatherInfo {
+    width: 100%;
+}
+
+.mainWeatherInfo__temp {
+    margin-top: 1em;
+    font-size: 2.8rem;
+}
+
+.mainWeatherInfo__pic {
+    margin-top: 1.25rem;
+    height: 7.5rem;
+}
+
+.weatherElement__value {
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: 1em;
+    font-weight: bold;
+    color: #757575;
+    text-align: right;
+}
+
+.weatherElement {
+    padding-top: 0.75rem;
+    background-color: lightgrey;
+    border-radius: 0.65rem;
+    margin-bottom: 0.3rem;
+}

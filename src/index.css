@@ -1,72 +1,27 @@
-
-#update-button{
+.button {
     background-color: lightgrey;
-    border-radius: 8px;
-    margin-top: 38px;
+    border-radius: 0.65rem;
+    margin-top: 1rem;
     color: #757575;
-    margin-bottom: 30px;
+    height: fit-content;
+    margin-bottom: 2rem;
 }
 
-#title{
-    color: #757575;
-    margin-top: 30px;
+.waitingText {
+    margin-left: 2rem;
+    font-size: 2.5em;
 }
 
-#waiting{
-    margin-left: 30px;
-    font-size: 40px;
-}
-
-h2{
+h2 {
     color: #757575;
 }
 
-P{
+P {
     text-align: left;
     width: 50%;
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
     font-weight: bold;
     color: #757575;
-}
-
-.css-236bqq{
-    margin-left: 35%;
-}
-
-
-
-#val{
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: 20px;
-    font-weight: bold;
-    color: #757575;
-}
-#string{
-    padding-top: 12px;
-    background-color: lightgrey;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-#pic{
-    margin-top: 20px;
-    height: 120px;
-}
-
-
-.mainInfo{
-    display: inline-block;
-}
-#temp{
-    margin-top: 35px;
-    font-size: 50px;
-}
-#inputfld{
-    background-color: #dddddd;
-    margin-right: 30px;
-    border-radius: 10px;
 }
 

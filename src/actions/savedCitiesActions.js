@@ -2,13 +2,12 @@ import { findWeatherByName, deleteFromStorage } from '../helpers/helpersfunction
 import { addToStorage } from '../helpers/helpersfunctions'
 
 export function addCity(cityName, currentState) {
-    console.log(cityName);
     return async function (dispatch) {
         if (!cityName) {
             alert('Please enter the city');
         } else {
+            cityName = cityName[0].toUpperCase() + cityName.toLowerCase().slice(1);
             if (currentState.findIndex(city => city.name === cityName) === -1) {
-                console.log(cityName);
                 findWeatherByName(cityName)
                     .then(function (data) {
                         if (data.clouds) {
@@ -18,8 +17,6 @@ export function addCity(cityName, currentState) {
                             alert("City Not Found");
                         }
                     })
-
-
             }
             else {
                 alert('This city is already added');

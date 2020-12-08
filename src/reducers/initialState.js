@@ -14,9 +14,15 @@
     return cityList;
 }
 
+function getUser() {
+    const token = sessionStorage.getItem('authToken');
+    return token;
+}
+
 
 const initialState = {
-    cities: getCities()
+    cities: getCities(),
+    user: getUser()
 };
 
 export default initialState;

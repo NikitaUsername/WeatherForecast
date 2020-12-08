@@ -23,13 +23,10 @@ class App extends React.Component {
   }
   
   findWeather = async (position) => {
-    console.log(position);
     const api_url = await
       fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&APPID=1db91134dffc102e728e7a3d0ad5eb23`);
-      
       const data = await api_url.json();
-    console.log(data);
-    this.setState({
+      this.setState({
       info: data
     });
   }
@@ -41,8 +38,6 @@ class App extends React.Component {
 
     navigator.geolocation.getCurrentPosition(this.findWeather, this.errorCallback);
   }
-
-  
 
   addToStorage = (name) => {
     const list = localStorage.getItem('list');
@@ -66,6 +61,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+
         <Header weatherMethod={this.gettingWeather} />
         <Weather weatherInfo={this.state.info} />
         <SavedHeader />

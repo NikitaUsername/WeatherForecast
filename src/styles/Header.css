@@ -1,0 +1,10 @@
+.title {
+    color: #757575;
+    margin-top: 2rem;
+}
+.modalForm__input{
+    background-color: #dddddd;
+    border-radius: 0.65rem;
+    margin-bottom: 1rem;
+    display: block;
+}

@@ -39,6 +39,20 @@ function store(state = initialState, action){
             };
         }
 
+        case 'SIGN_IN':{
+            return{
+                ...state,
+                user: action.name
+            }
+        }
+
+        case 'SIGN_OUT':{
+            return{
+                ...state,
+                user: undefined
+            }
+        }
+
         default: return state = initialState;
     }
 };
