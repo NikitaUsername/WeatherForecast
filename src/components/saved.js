@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { addWeather, deleteCity } from '../actions/savedCitiesActions'
 import { ClipLoader } from 'react-spinners';
 import * as PropTypes from 'prop-types';
-import WeatherData from "../components/WeatherData"
+import WeatherData from "./WeatherData"
 
 class Saved extends React.Component {
     componentDidMount() {
