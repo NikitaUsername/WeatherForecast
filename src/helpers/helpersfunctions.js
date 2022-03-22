@@ -1,7 +1,7 @@
 
 export async function findWeatherByName(name) {
   const api_url = await
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&APPID=1db91134dffc102e728e7a3d0ad5eb23`);
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&APPID=1db91134dffc102e728e7a3d0ad5eb23`);
   const data = await api_url.json();
   return data;
 }
@@ -54,7 +54,7 @@ export async function errorCallback() {
 export async function findWeather(position) {
     console.log(position);
     const api_url = await
-      fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&APPID=1db91134dffc102e728e7a3d0ad5eb23`);
+      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&APPID=1db91134dffc102e728e7a3d0ad5eb23`);
     const data = await api_url.json();
     return data;
 }
